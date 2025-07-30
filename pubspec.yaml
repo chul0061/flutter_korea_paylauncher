@@ -1,0 +1,20 @@
+name: flutter_korea_paylauncher
+description: Flutter library for launching Korean payment apps and handling payment app redirects.
+version: 1.0.0
+homepage: https://github.com/yourusername/flutter_korea_paylauncher
+
+environment:
+  sdk: ">=3.1.1 <4.0.0"
+  flutter: ">=3.3.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  url_launcher: ^6.1.12
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
