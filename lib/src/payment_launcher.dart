@@ -93,4 +93,18 @@ class PaymentLauncher {
       return null;
     }
   }
+
+  /// 앱 링크인지 판별합니다.
+  ///
+  /// [url] 결제 URL
+  ///
+  /// 반환값: 앱 링크 또는 null
+  static Future<bool> isAppLink(String url) async {
+    try {
+      final convertUrl = ConvertUrl(url);
+      return convertUrl.isAppLink();
+    } catch (e) {
+      return false;
+    }
+  }
 }
